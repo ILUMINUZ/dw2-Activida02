@@ -1,13 +1,56 @@
-
-
-#errores{
-	background: red;
-	color: white;
-	padding: 8px;
-	text-align: center;	
-	border-radius: 5px;
-	display: none;
+/* Mensaje de error */
+#errores {
+    background: #ff6f61; /* Color rojo más suave */
+    color: white;
+    padding: 10px; /* Aumentar el padding */
+    text-align: center;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+    display: none; /* El error no se muestra por defecto */
+    transition: all 0.3s; /* Animación suave para transiciones */
 }
-.campo-vacio{
-	box-shadow: 0 0 5px red;
+
+/* Efecto para campos vacíos */
+.campo-vacio {
+    border: 2px solid #ff6f61; /* Borde rojo suave */
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); /* Sombra roja con transparencia */
+    transition: all 0.3s; /* Animación suave */
+}
+
+/* Campos de entrada */
+.campo {
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    transition: all 0.3s; /* Animación suave */
+}
+
+/* Estilos generales para etiquetas */
+label {
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilos para el botón de enviar */
+.boton {
+    background: #4CAF50; /* Color verde para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espacio interno */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s; /* Animación suave */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton:hover {
+    background: #45a049; /* Color verde más oscuro en hover */
+}
+
+/* Estilos para el contenedor del contacto */
+#contacto {
+    padding: 20px; /* Espacio interno */
+    background: #fff; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
 }

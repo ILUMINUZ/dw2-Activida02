@@ -1,27 +1,40 @@
-/*NUEVO*/
-#containerSlider{
-	height:450px;
-	width: 2550px;
+/* Nuevo bloque de CSS */
+#containerSlider {
+    height: 450px;
+    width: 2550px;
+    overflow: hidden; /* Para asegurarse de que las imágenes no se desborden */
+    background: #fff; /* Fondo claro para el slider */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Efecto de sombra alrededor del slider */
 }
-#containerSlider img{
-	float: left;
-}
-#menuSlider{
-	margin-top: -40px;
-	text-align: center;
-}
-#menuSlider a{
-	background: transparent;
-	font-family: 2px;
-	padding: 0 7px;
-	text-decoration: none;
 
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
-	border-radius: 10px;
-	box-shadow: 0 1px 1px #fff, inset 0 2px 2px #000;
+#containerSlider img {
+    float: left; /* Mantiene las imágenes en línea */
+    transition: transform 0.3s; /* Transición suave para animaciones */
 }
-.menuSliderSeleccionado{
-	background: rgba(255,255,255,0.5) !important;
+
+#menuSlider {
+    margin-top: -40px;
+    text-align: center;
+}
+
+#menuSlider a {
+    background: transparent;
+    font-size: 14px; /* Tamaño de fuente más legible */
+    padding: 5px 10px; /* Espacio adicional para el área de clic */
+    text-decoration: none;
+
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 1px 1px #fff, inset 0 2px 2px #000; /* Efectos de sombra para darle profundidad */
+    transition: all 0.3s; /* Transiciones suaves para hover */
+}
+
+#menuSlider a:hover {
+    background: rgba(255, 255, 255, 0.7); /* Fondo más claro al pasar el ratón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Efecto de sombra más pronunciado */
+}
+
+.menuSliderSeleccionado {
+    background: rgba(255, 255, 255, 0.5) !important;
+    color: #000; /* Asegura que el texto sea visible */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Sombra adicional para el seleccionado */
 }

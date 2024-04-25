@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Datos de Formularios</title>
+    <script>
+    // Simular autenticación básica
+    function checkAccess() {
+        var password = prompt("Ingrese la contraseña:");
+        if (password !== "admin123") { // Cambia esta contraseña a algo más seguro
+            alert("Acceso denegado");
+            window.location.href = "formulario.html"; // Si la contraseña es incorrecta, redirigir al formulario
+        }
+    }
+
+    function cargarDatos() {
+        var datos = JSON.parse(localStorage.getItem("formularioDatos")) || [];
+
+        var tabla = document.getElementById("tablaDatos");
+        for (var i = 0; i < datos.length; i++) {
+            var fila = document.createElement("tr");
+            fila.innerHTML = `
+                <td>${datos[i].nombre}</td>
+                <td>${datos[i].correo}</td>
+                <td>${datos[i].asunto}</td>
+                <td>${datos[i].mensaje}</td>
+            `;
+            tabla.appendChild(fila);
+        }
+    }
+    </script>
+</head>
+<body onload="checkAccess(); cargarDatos();">
+    <h2>Datos de Formularios Enviados</h2>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Asunto</th>
+            <th>Mensaje</th>
+        </tr>
+        <tbody id="tablaDatos">
+            <!-- Los datos se cargan mediante JavaScript -->
+        </tbody>
+    </table>
+</body>
+</html>

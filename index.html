@@ -1,173 +1,182 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<title>Mi sitio web con jQuery</title>
-	<link rel="stylesheet" href="css/estilos.css"/>
-	<link rel="stylesheet" href="css/slider.css"/>
-	<link rel="stylesheet" href="css/tabs.css"/>
-	<link rel="stylesheet" href="css/slideshow.css"/>
-	<link rel="stylesheet" href="css/acordeon.css"/>
-	<link rel="stylesheet" href="css/contacto.css"/>
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script>
-	<script type="text/javascript" src="js/tabs.js"></script>
-	<script type="text/javascript" src="js/slideshow.js"></script>
-	<script type="text/javascript" src="js/acordeon.js"></script>
-	<script type="text/javascript" src="js/contacto.js"></script>
+    <meta charset="utf-8">
+    <title>Mi sitio web con jQuery</title>
+
+    <!-- Se añadió Bootstrap CSS para usar su framework -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    <!-- Mantener tus estilos existentes para no perder el estilo personalizado -->
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/slider.css"/>
+    <link rel="stylesheet" href="css/tabs.css"/>
+    <link rel="stylesheet" href="css/slideshow.css"/>
+    <link rel="stylesheet" href="css/acordeon.css"/>
+    <link rel="stylesheet" href="css/contacto.css"/>
 
 </head>
 <body>
-	<div id="container">
-		<div id="menu">
-			<ul>
-				<li><a href="#servicios">SERVICIOS</a></li>
-				<li><a href="#trabajo">TRABAJO</a></li>
-				<li ><a href="#inicio" class="logo">&nbsp;</a></li>
-				<li><a href="#contacto">CONTACTO</a></li>
-				<li><a href="#faq">FAQ</a></li>
-			</ul>
-		</div><!--menu -->	
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#trabajo">TRABAJO</a></li>
+                <li><a href="#inicio" class="logo">&nbsp;</a></li> <!-- Logo en el centro -->
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div><!--menu -->
 
-		<div id="inicio">
-			<div id="slider">
-				<div id="containerSlider">
-					<img src="img/slider1.jpg" alt="" width="850" height="450">
-					<img src="img/slider2.jpg" alt="" width="850" height="450">
-					<img src="img/slider3.jpg" alt="" width="850" height="450">
-				</div><!--containerSlider -->
-				
-			</div><!--slider -->
-		</div><!-- #inicio -->
+        <div id="inicio">
+            <div id="slider">
+                <div id="containerSlider">
+                    <img src="img/slider1.jpg" alt="" width="850" height="450">
+                    <img src="img/slider2.jpg" alt="" width="850" height="450">
+                    <img src="img/slider3.jpg" alt="" width="850" height="450">
+                </div><!--containerSlider -->
+            </div><!--slider -->
+        </div><!-- #inicio -->
 
-		<div id="servicios">
-			<h2>SERVICIOS</h2>
-			<div class="contenido">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
-				<div id="tabServicios">
-				<div id="tabs">
-					<a href="#">Plan Básico</a>
-					<a href="#">Para PyMES</a>
-					<a href="#">Plan Empresarial</a>
-				</div>
-				<div class="tabsContent">
-					<img src="img/tab1.jpg" alt="">
-				</div>
-				<div class="tabsContent">
-					<img src="img/tab2.jpg" alt="">
-				</div>
-				<div class="tabsContent">
-					<img src="img/tab3.jpg" alt="">
-				</div>
-			</div><!--tabServicios -->
-			</div><!--contenido -->
-			
-		</div><!--servicios -->
+        <!-- Sección de servicios con texto más detallado y agregado de listas -->
+        <div id="servicios">
+            <h2>SERVICIOS</h2>
+            <div class="contenido">
+                <!-- Descripción general de los servicios -->
+                <p>Ofrecemos una gama de servicios para satisfacer las necesidades de nuestros clientes. Aquí puedes encontrar detalles sobre nuestros diferentes planes y seleccionar el que mejor se adapte a tus necesidades.</p>
+                
+                <!-- Uso de listas para presentar servicios -->
+                <div id="tabServicios">
+                    <div id="tabs">
+                        <!-- Opciones de planes -->
+                        <a href="#">Plan Básico</a>
+                        <a href="#">Para PyMES</a>
+                        <a href="#">Plan Empresarial</a>
+                    </div>
 
-		<div id="trabajo">
-			<h2>TRABAJO</h2>
-			<div class="contenido">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
-				<div id="slideshow">
-					<img src="img/slideshow1_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-					<img src="img/slideshow2_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-					<img src="img/slideshow3_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-					<img src="img/slideshow4_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-					<img src="img/slideshow5_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-					<img src="img/slideshow6_thumbail.jpg" alt="" width="200" height="120" title="Este sitio fue creado con...">
-				</div><!--slideshow -->
-			</div><!--contenido -->
-		</div><!--trabajo -->
+                    <!-- Cambiar el contenido de imágenes a texto detallado para cada plan -->
+                    <div class="tabsContent">
+                        <p>El Plan Básico es ideal para individuos y pequeñas empresas que necesitan servicios esenciales de soporte técnico. Incluye:
+                            <ul> <!-- Se usaron listas para mayor claridad -->
+                                <li>Soporte por correo electrónico para consultas técnicas.</li>
+                                <li>Acceso a nuestro foro de ayuda con soluciones a problemas comunes.</li>
+                                <li>Actualizaciones automáticas de software básico para garantizar la seguridad y funcionalidad.</li>
+                            </ul>
+                            Este plan es económico y brinda soporte básico para comenzar. Si estás iniciando o necesitas soporte mínimo, el Plan Básico es una excelente opción.
+                        </p>
+                    </div>
 
-		<div id="faq">
-			<h2>FAQ</h2>
-			<div class="contenido">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>	
+                    <div class="tabsContent">
+                        <p>El Plan para PyMES está diseñado para pequeñas y medianas empresas que requieren servicios adicionales para sus operaciones. Incluye:
+                            <ul> 
+                                <li>Soporte técnico por teléfono y correo electrónico.</li>
+                                <li>Servicio de configuración personalizado para tus necesidades empresariales.</li>
+                                <li>Acceso a recursos exclusivos para el crecimiento y la productividad de PyMES.</li>
+                            </ul>
+                            Con este plan, obtienes soporte más completo y servicios personalizados para tu empresa. Ideal para empresas en crecimiento.
+                        </p>
+                    </div>
 
-				<div id="acordeonFaq">
-					
-					<div class="item">
-						<div class="pregunta">¿Esta es la pregunta 1?</div>
-						<div class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</div>
-					</div>
+                    <div class="tabsContent">
+                        <p>El Plan Empresarial es nuestro paquete premium, diseñado para grandes empresas o corporaciones con necesidades avanzadas. Este plan ofrece:
+                            <ul>
+                                <li>Un gestor de cuenta dedicado para soporte prioritario y consultas.</li>
+                                <li>Integración avanzada con sistemas empresariales y servicios adicionales de asesoramiento.</li>
+                                <li>Soporte técnico 24/7 para garantizar el funcionamiento continuo de tus sistemas.</li>
+                            </ul>
+                            El Plan Empresarial es perfecto para empresas que requieren servicios avanzados y soporte prioritario para mantener sus operaciones sin problemas.
+                        </p>
+                    </div>
+                </div><!-- tabServicios -->
+            </div><!-- contenido -->
+        </div><!-- servicios -->
 
-					<div class="item">
-						<div class="pregunta">¿Esta es la pregunta 2?</div>
-						<div class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</div>
-					</div>
+        <!-- Texto más detallado en la sección de trabajo -->
+        <div id="trabajo">
+            <h2>TRABAJO</h2>
+            <div class="contenido">
+                <p>Somos una importadora de celulares con años de experiencia en el mercado. Nos especializamos en traer las mejores marcas de teléfonos móviles desde los principales fabricantes internacionales, asegurando calidad y autenticidad en cada producto que ofrecemos.</p>
+                <p>Nuestro proceso de importación es eficiente y cumple con todos los requisitos legales y aduaneros. Trabajamos estrechamente con nuestros proveedores para garantizar la entrega rápida y segura de los productos. Ofrecemos una amplia gama de modelos y marcas, desde dispositivos de gama alta hasta opciones más accesibles para diferentes presupuestos.</p>
+                <div id="slideshow">
+                    <img src="img/slideshow1_thumbail.jpg" alt="" width="200" height="120" title="Almacenes y logística">
+                    <img src="img/slideshow2_thumbail.jpg" alt="" width="200" height="120" title="Proceso de importación">
+                    <img src="img/slideshow3_thumbail.jpg" alt="" width="200" height="120" title="Selección de productos">
+                    <img src="img/slideshow4_thumbail.jpg" alt="" width="200" height="120" title="Distribución y entrega">
+                    <img src="img/slideshow5_thumbail.jpg" alt="" width="200" height="120" title="Atención al cliente">
+                    <img src="img/slideshow6_thumbail.jpg" alt="" width="200" height="120" title="Servicios de posventa">
+                </div><!-- slideshow -->
+            </div><!-- contenido -->
+        </div><!-- trabajo -->
 
-					<div class="item">
-						<div class="pregunta">¿Esta es la pregunta 3?</div>
-						<div class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</div>
-					</div>
+        <!-- Cambios en la sección FAQ para preguntas más detalladas y acordeón -->
+        <div id="faq">
+            <h2>FAQ</h2>
+            <div class="contenido">
+                <p>En esta sección, respondemos a algunas de las preguntas más comunes relacionadas con nuestros servicios de importación y la adquisición de celulares. Si tienes alguna otra pregunta, no dudes en contactarnos.</p>    
 
-					<div class="item">
-						<div class="pregunta">¿Esta es la pregunta 4?</div>
-						<div class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</div>
-					</div>
+                <div id="acordeonFaq"> <!-- Cambió a acordeón -->
+                    <div class="item">
+                        <div class="pregunta">¿De dónde importan los celulares?</div>
+                        <div class="respuesta">Importamos celulares de los principales fabricantes de todo el mundo, especialmente de Estados Unidos, China y Europa.</div>
+                    </div>
 
-					<div class="item">
-						<div class="pregunta">¿Esta es la pregunta 5?</div>
-						<div class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</div>
-					</div>
+                    <div class="item">
+                        <div class="pregunta">¿Cómo garantizan la calidad de los productos?</div>
+                        <div class="respuesta">Todos nuestros productos pasan por un riguroso proceso de inspección y control de calidad antes de ser enviados a nuestros clientes.</div>
+                    </div>
 
-				</div><!--acordeonFaq -->
-			</div><!--contenido -->
-		</div><!--faq -->
+                    <div class="item">
+                        <div class="pregunta">¿Ofrecen garantía en los celulares?</div>
+                        <div class="respuesta">Sí, todos nuestros celulares vienen con garantía. El período de garantía varía según la marca y el modelo.</div>
+                    </div>
 
-		<div id="contacto">
-			<h2>CONTACTO</h2>
-			<div class="contenido">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
-			</div><!--contenido -->
-			<div id="formulario">
-				<form action="">
+                    <div class="item">
+                        <div class="pregunta">¿Cuáles son los métodos de pago aceptados?</div>
+                        <div la respuesta">Aceptamos una variedad de métodos de pago, incluyendo tarjetas de crédito, transferencias bancarias y otros métodos electrónicos.</div>
+                    </div>
 
-					<div id="errores">Debes completar todos los campos</div>
-					
-					<label>Nombre:</label><br />
-					<input type="text" class="campo" id="tfNombre"><br />
+                    <div la item">
+                        <div class="pregunta">¿Cuánto tiempo tarda la entrega de los celulares?</div>
+                        <div la respuesta">El tiempo de entrega depende de la ubicación del cliente y el método de envío seleccionado.</div>
+                    </div>
+                </div><!-- acordeonFaq -->
+            </div><!-- contenido -->
+        </div><!-- faq -->
 
-					<label>Correo Electr&oacute;nico:</label><br />
-					<input type="text" class="campo" id="tfCorreo"><br />
+        <!-- Cambios en el formulario de contacto para incluir validaciones -->
+        <div id="contacto">
+            <h2>CONTACTO</h2>
+            <div class="contenido">
+                <div id="errores" style="display: none;">Debes completar todos los campos</div>
+                <div id="exito" style="display: none;">Formulario enviado correctamente</div>
+                <form id="formContacto" onsubmit="enviarFormulario(event)"> <!-- Uso de función personalizada para validación -->
+                    <label>Nombre:</label><br />
+                    <input type="text" id="tfNombre"><br />
 
-					<label>Asunto:</label><br />
-					<input type="text" class="campo" id="tfAsunto"><br />
+                    <label>Correo Electrónico:</label><br />
+                    <input type="text" id="tfCorreo"><br />
 
-					<label>Mensaje:</label><br />
-					<textarea id="tfMensaje" cols="30" rows="10"></textarea><br />
-					<input type="submit" id="bEnviar" value="Enviar formulario!" class="boton">
-				</form>
-			</div><!--formulario -->
-		</div><!--contacto -->
+                    <label>Asunto:</label><br />
+                    <input type="text" id="tfAsunto"><br />
 
-		<div id="footer">
-			Derechos Reservados Vida MRR 2012. Politicas de Privacidad.	
-		</div><!--footer -->
-	</div><!--container -->
+                    <label>Mensaje:</label><br />
+                    <textarea id="tfMensaje" cols="30" rows="10"></textarea><br />
+                    
+                    <input type="submit" value="Enviar" class="boton"> <!-- Botón de envío -->
+                </form>
+            </div><!-- contenido -->
+        </div><!-- contacto -->
+
+    </div><!--container -->
+
+    <!-- Se añadieron scripts para la funcionalidad -->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/acordeon.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
 </body>
 </html>
